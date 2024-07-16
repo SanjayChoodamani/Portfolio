@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Gallient';
+    src: url(/fonts/Gallient.ttf) format('truetype');
+  }
+  @font-face {
+    font-family: 'DM-Sans';
+    src: url(/fonts/DMSans-Regular.ttf) format('truetype');
+  }
+}
+
+
+body{
+  margin: 0px;
+  padding: 10px;
+  background-color: #FAFAF8;
+  color: #363636;
+}
