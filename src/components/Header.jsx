@@ -1,4 +1,5 @@
 import React from 'react'
+import { HashLink as Link } from 'react-router-hash-link';
 
 const Header = () => {
     return (
@@ -6,12 +7,12 @@ const Header = () => {
             <div>
                 <h1>SANJAY B S</h1>
             </div>
-            <div >
-                <ul className='flex gap-5'>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Projects</li>
-                    <li>Contact</li>
+            <div className='menu'>
+                <ul className='md:flex gap-5'>
+                    <li><Link to="#hero" smooth>Home</Link></li>
+                    <li><Link to="#about" smooth>About</Link></li>
+                    <li><Link to="#projects" smooth>Projects</Link></li>
+                    <li><Link to="#contact" smooth>Contact</Link></li>
                 </ul>
             </div>
         </nav>
